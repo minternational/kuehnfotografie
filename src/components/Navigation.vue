@@ -19,8 +19,8 @@
           ease-in-out
           w-24
         "
-        v-for="(item, index) in navItems"
-        :key="index"
+        v-for="(item, id) in navItems"
+        :key="id"
       >
         <router-link :to="item.route">{{ item.text }}</router-link>
       </button>

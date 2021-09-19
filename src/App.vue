@@ -20,12 +20,14 @@ export default {
     Navigation,
     Footer,
   },
-  data: () => ({
-    routeItems: [
-      { text: "Home", route: "/" },
-      { text: "Über mich", route: "/about" },
-    ],
-  }),
+  data() {
+    return {
+      routeItems: [
+        { id: 1, text: "Home", route: "/" },
+        { id: 2, text: "Über mich", route: "/about" },
+      ],
+    };
+  },
 };
 </script>
 
