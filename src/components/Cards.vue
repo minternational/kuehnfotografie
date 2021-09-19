@@ -51,10 +51,15 @@ import Category from "@/components/Category.vue";
 export default {
   name: "Cards",
   component: Category,
-  props: {
-    categorieCards: {
-      type: Array,
-    },
+  data() {
+    return {
+      categorieCards: [],
+    };
+  },
+  mounted() {
+    fetch("data.json")
+      .then(res => res.json())
+      .then(data => (this.categorieCards = data.cards));
   },
 };
 </script>
