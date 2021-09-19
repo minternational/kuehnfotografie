@@ -12,10 +12,5 @@ export default {
   components: {
     Cards,
   },
-  data() {
-    return {
-      categorieItems: [],
-    };
-  },
 };
 </script>
