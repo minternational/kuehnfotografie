@@ -46,11 +46,11 @@
 </template>
 
 <script>
-import Category from "@/components/Category.vue";
+import Gallery from "@/components/Gallery.vue";
 
 export default {
   name: "Cards",
-  component: Category,
+  component: Gallery,
   data() {
     return {
       categorieCards: [],

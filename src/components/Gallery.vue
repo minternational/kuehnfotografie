@@ -1,24 +1,24 @@
 <template>
   <div>
-    {{ categoryName }}
+    {{ galleryName }}
   </div>
 </template>
 
 <script>
 export default {
-  name: "Category",
+  name: "Gallery",
   data() {
     return {
-      categoryName: "",
+      galleryName: "",
     };
   },
   mounted() {
-    this.getCategoryPath();
+    this.getGalleryPath();
   },
   methods: {
-    getCategoryPath() {
+    getGalleryPath() {
       console.log(document.location.hash);
-      this.categoryName = document.location.hash;
+      this.galleryName = document.location.hash;
     },
   },
 };
