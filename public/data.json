@@ -36,25 +36,25 @@
       "id": 1,
       "name": "reisen",
       "img": "https://www.crmk.de/kuehnfotografie/images/cover/travel.jpg",
-      "route": "/travel"
+      "route": "/gallery/reisen"
     },
     {
       "id": 2,
       "name": "portrait",
       "img": "https://www.crmk.de/kuehnfotografie/images/cover/portrait.jpg",
-      "route": "/portrait"
+      "route": "/gallery/portrait"
     },
     {
       "id": 3,
       "name": "mode",
       "img": "https://www.crmk.de/kuehnfotografie/images/cover/fashion.jpg",
-      "route": "/fashion"
+      "route": "/gallery/mode"
     },
     {
       "id": 4,
       "name": "liebe",
       "img": "https://www.crmk.de/kuehnfotografie/images/cover/hochzeit.jpg",
-      "route": "/love"
+      "route": "/gallery/liebe"
     }
   ]
 }

@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Home from "../views/Home.vue";
 import About from "../components/About.vue";
-import Category from "../components/Category.vue";
+import Gallery from "../components/Gallery.vue";
 // import Travel from "../components/Travel.vue";
 // import Portrait from "../components/Portrait.vue";
 // import Fashion from "../components/Fashion.vue";
@@ -19,9 +19,9 @@ const routes = [
     component: About,
   },
   {
-    path: "/category",
-    name: "Category",
-    component: Category,
+    path: "/gallery/:id",
+    name: "Gallery",
+    component: Gallery,
   },
   // {
   //   path: "/portrait",
