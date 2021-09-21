@@ -1,5 +1,5 @@
 <template>
-  <div class="footer pt-24 pb-12">
+  <div class="footer pt-12 pb-12">
     <a
       class="
         border-transparent
