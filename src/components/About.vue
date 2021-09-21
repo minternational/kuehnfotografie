@@ -8,8 +8,8 @@
       </ul>
       <br />
       <br />
-      <ul v-for="i in item.impressum.length" :key="i">
-        <li>{{ item.impressum[i - 1] }}</li>
+      <ul v-for="i in item.details.length" :key="i">
+        <li>{{ item.details[i - 1] }}</li>
       </ul>
     </div>
   </div>
@@ -20,16 +20,16 @@ export default {
   data() {
     return {
       about: [],
-      impressum: [],
+      details: [],
     };
   },
   mounted() {
     fetch("data.json")
       .then(res => res.json())
       .then(data => {
-        const { about, impressum } = data;
+        const { about, details } = data;
         this.about = about;
-        this.impressum = impressum;
+        this.details = details;
       });
   },
 };

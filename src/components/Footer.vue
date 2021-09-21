@@ -33,26 +33,36 @@
     >
       <i class="fas fa-phone-square-alt"></i> Telefon
     </a>
-    <a
-      class="
-        border-transparent
-        text-gray-500
-        border-b
-        hover:text-black hover:border-gray-500
-        transform
-        transition
-        duration-200
-        ease-in-out
-        m-3
-        p-3
-      "
-      href="impressum.html"
-    >
-      <i class="fas fa-info"></i>
-      Impressum
-    </a>
+    <router-link to="/impressum"
+      ><a
+        class="
+          border-transparent
+          text-gray-500
+          border-b
+          hover:text-black hover:border-gray-500
+          transform
+          transition
+          duration-200
+          ease-in-out
+          m-3
+          p-3
+        "
+      >
+        <i class="fas fa-info"></i>
+        Impressum
+      </a>
+    </router-link>
   </div>
 </template>
+
+<script>
+import Impressum from "@/components/Impressum.vue";
+
+export default {
+  name: "Footer",
+  components: Impressum,
+};
+</script>
 
 <style scoped>
 a {
