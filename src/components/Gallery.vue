@@ -4,9 +4,7 @@
       loading="lazy"
       class="m-2 rounded-md"
       v-for="i in 47"
-      :src="`https://www.crmk.de/kuehnfotografie/images/${galleryName.substring(
-        10
-      )}/0${i}.jpg`"
+      :src="`https://www.crmk.de/kuehnfotografie/images/${this.$route.params.id}/0${i}.jpg`"
       :key="i"
       alt="Mode"
     />
@@ -18,17 +16,8 @@ export default {
   name: "Gallery",
   data() {
     return {
-      galleryName: "",
+      destinationId: this.$route.params.id,
     };
-  },
-  mounted() {
-    this.getGalleryPath();
-  },
-  methods: {
-    getGalleryPath() {
-      console.log(document.location.hash);
-      this.galleryName = document.location.hash;
-    },
   },
 };
 </script>
@@ -39,30 +28,3 @@ export default {
   column-gap: 1rem;
 }
 </style>
-
-<!--
-
-{{ galleryName.substring(10) }}
-
-    v-for="(item, id) in imageItems"
-    :key="id"
-    class="fashion masonry-with-columns"
-  >
-    <h1>{{ item.name }}</h1
-
-
-
-
-<img
-      loading="lazy"
-      class="m-2 rounded-md"
-      v-for="i in 50"
-      :src="`https://www.crmk.de/kuehnfotografie/images/liebe/0${i}.jpg`"
-      :key="i"
-      alt="Mode"
-    />
-
-
-    
-
--->
