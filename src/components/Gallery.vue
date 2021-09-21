@@ -2,7 +2,7 @@
   <div class="masonry-with-columns mx-auto mt-12">
     <img
       loading="lazy"
-      class="rounded-lg mb-5"
+      class="lazyload rounded-lg mb-5"
       v-for="i in 47"
       :src="`https://www.crmk.de/kuehnfotografie/images/${destinationId}/0${i}.jpg`"
       :key="i"
@@ -28,9 +28,3 @@ export default {
   column-gap: 1rem;
 }
 </style>
-
-<!--
-
-
-
--->
