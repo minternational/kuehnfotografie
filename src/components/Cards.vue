@@ -38,7 +38,7 @@
           :src="item.img"
         />
         <div class="footer p-4 capitalize">
-          <h1>{{ item.name }}</h1>
+          <h2>{{ item.name }}</h2>
         </div>
       </div>
     </router-link>
@@ -63,3 +63,10 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+h2 {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+</style>

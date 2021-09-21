@@ -6,7 +6,7 @@
           border-transparent
           hover:text-black
           text-gray-500
-          mt-12
+          mt-6
           mb-6
           mr-6
           ml-6

@@ -1,7 +1,7 @@
 <template>
   <div id="nav">
     <Header />
-    <Navigation :nav-items="routeItems" />
+    <Navigation />
     <router-view></router-view>
     <Footer />
   </div>
@@ -19,11 +19,6 @@ export default {
     Header,
     Navigation,
     Footer,
-  },
-  mounted() {
-    fetch("data.json")
-      .then(res => res.json())
-      .then(data => console.log(data.navigation));
   },
 };
 </script>
