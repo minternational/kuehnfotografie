@@ -21,6 +21,10 @@ export default {
 </script>
 
 <style scoped>
+* {
+  font-weight: 500;
+}
+
 p {
   white-space: pre-line;
 }

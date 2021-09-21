@@ -1,5 +1,5 @@
 <template>
-  <div class="footer pt-12 pb-12">
+  <div class="footer pt-24 pb-12">
     <a
       class="
         border-transparent
@@ -47,6 +47,7 @@
           m-3
           p-3
         "
+        href="impressum.html"
       >
         <i class="fas fa-info"></i>
         Impressum
