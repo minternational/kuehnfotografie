@@ -6,10 +6,7 @@
           border-transparent
           hover:text-black
           text-gray-500
-          mt-6
-          mb-6
-          mr-6
-          ml-6
+          m-6
           p-2
           hover:border-gray-500
           border-b
