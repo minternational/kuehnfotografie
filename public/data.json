@@ -81,5 +81,9 @@
       "icon": "<i class='fas fa-info'></i>",
       "name": "Impressum"
     }
+  ],
+  "navigation": [
+    { "id": 1, "text": "Home", "route": "/" },
+    { "id": 2, "text": "Über mich", "route": "/about" }
   ]
 }

@@ -20,13 +20,10 @@ export default {
     Navigation,
     Footer,
   },
-  data() {
-    return {
-      routeItems: [
-        { id: 1, text: "Home", route: "/" },
-        { id: 2, text: "Über mich", route: "/about" },
-      ],
-    };
+  mounted() {
+    fetch("data.json")
+      .then(res => res.json())
+      .then(data => console.log(data.navigation));
   },
 };
 </script>

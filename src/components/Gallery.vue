@@ -1,12 +1,12 @@
 <template>
-  <div class="fashion masonry-with-columns">
+  <div class="fashion">
     <img
       loading="lazy"
       class="m-2 rounded-md"
       v-for="i in 47"
       :src="`https://www.crmk.de/kuehnfotografie/images/${destinationId}/0${i}.jpg`"
       :key="i"
-      alt="Mode"
+      :alt="{ destinationId }"
     />
   </div>
 </template>
@@ -26,5 +26,8 @@ export default {
 .masonry-with-columns {
   columns: 3 200px;
   column-gap: 1rem;
+}
+img {
+  max-width: 95%;
 }
 </style>

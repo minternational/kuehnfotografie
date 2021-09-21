@@ -19,7 +19,7 @@
           ease-in-out
           w-24
         "
-        v-for="(item, id) in navItems"
+        v-for="(item, id) in navigationItems"
         :key="id"
       >
         <router-link :to="item.route">{{ item.text }}</router-link>
@@ -31,10 +31,15 @@
 <script>
 export default {
   name: "Navigation",
-  props: {
-    navItems: {
-      type: Array,
-    },
+  data() {
+    return {
+      navigationItems: [],
+    };
+  },
+  mounted() {
+    fetch("data.json")
+      .then(res => res.json())
+      .then(data => (this.navigationItems = data.navigation));
   },
 };
 </script>
