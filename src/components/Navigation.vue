@@ -1,5 +1,9 @@
 <template>
-  <div class="inline-block" v-for="(item, id) in navigationItems" :key="id">
+  <div
+    class="inline-block w-40"
+    v-for="(item, id) in navigationItems"
+    :key="id"
+  >
     <ul class="pt-6 pb-6">
       <router-link :to="item.route">
         <a

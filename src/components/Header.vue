@@ -7,6 +7,6 @@
 
 <style scoped>
 img {
-  max-width: 200px;
+  max-width: 225px;
 }
 </style>
