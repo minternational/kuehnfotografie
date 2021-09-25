@@ -1,6 +1,6 @@
 <template>
-  <div class="footer p-12">
-    <a
+  <div class="pt-12">
+        <a
       class="
         border-transparent
         text-gray-500
@@ -64,9 +64,3 @@ export default {
   components: Impressum,
 };
 </script>
-
-<style scoped>
-a {
-  font-weight: 500;
-}
-</style>
