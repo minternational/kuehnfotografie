@@ -1,5 +1,5 @@
 <template>
-  <div class="about text-justify max-w-2xl mx-auto">
+  <div class="about mb-12 text-justify max-w-2xl mx-auto">
     <img class="mt-6 mb-8 mx-auto" src="@/assets/circle-me.png" alt="profile" />
     <div v-for="(item, id) in about" :key="id">
       <p>{{ item.content }}</p>
@@ -42,5 +42,9 @@ img {
 
 p {
   white-space: pre-line;
+}
+
+.about {
+  width: 90%;
 }
 </style>

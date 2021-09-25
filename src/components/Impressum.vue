@@ -1,5 +1,5 @@
 <template>
-  <div class="text-justify max-w-2xl mx-auto">
+  <div class="impressum mb-12 text-justify max-w-2xl mx-auto">
     <p>{{ impressum.content }}</p>
   </div>
 </template>
@@ -27,5 +27,9 @@ export default {
 
 p {
   white-space: pre-line;
+}
+
+.impressum {
+  width: 90%;
 }
 </style>
