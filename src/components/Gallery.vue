@@ -8,6 +8,7 @@
       :key="i"
       :alt="{ destinationId }"
     />
+    
   </div>
 </template>
 
@@ -18,7 +19,7 @@ export default {
     return {
       destinationId: this.$route.params.id,
     };
-  },
+  }
 };
 </script>
 

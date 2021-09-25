@@ -6,6 +6,8 @@
         class="
           border
           shadow-md
+          opacity-80
+          hover:opacity-100
           hover:shadow-xl
           hover:scale-105
           hover:border-transparent
@@ -26,8 +28,6 @@
             mx-auto
             rounded-t
             filter
-            opacity-80
-            hover:opacity-100
             transform
             transition
             duration-200
@@ -38,7 +38,7 @@
           :src="item.img"
         />
         <div class="footer p-4 capitalize">
-          <h2>{{ item.name }}</h2>
+          <h2 class="text-xl">{{ item.name }}</h2>
         </div>
       </div>
     </router-link>
@@ -60,13 +60,6 @@ export default {
     fetch("data.json")
       .then(res => res.json())
       .then(data => (this.categorieCards = data.cards));
-  },
+  }
 };
 </script>
-
-<style scoped>
-h2 {
-  font-size: 1.5rem;
-  font-weight: 100;
-}
-</style>
