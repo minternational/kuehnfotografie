@@ -1,5 +1,5 @@
 <template>
-  <div class="impressum mb-12 text-justify max-w-2xl mx-auto">
+  <div class="impressum pt-12 mb-12 text-justify max-w-2xl mx-auto">
     <p>{{ impressum.content }}</p>
   </div>
 </template>
