@@ -66,19 +66,19 @@
     {
       "id": 1,
       "link": "mailto:kontakt@kuehnfotografie.de",
-      "icon": "<i class='fas fa-envelope'></i>",
+      "icon": "fas fa-envelope",
       "name": "E-Mail"
     },
     {
       "id": 2,
       "link": "callto:+4915732620558",
-      "icon": "<i class='fas fa-phone-square-alt'></i>",
+      "icon": "fas fa-phone-square-alt",
       "name": "Telefon"
     },
     {
       "id": 3,
-      "link": "/impressum",
-      "icon": "<i class='fas fa-info'></i>",
+      "link": "#/impressum",
+      "icon": "fas fa-info",
       "name": "Impressum"
     }
   ],

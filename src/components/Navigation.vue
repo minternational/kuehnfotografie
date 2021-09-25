@@ -1,26 +1,26 @@
 <template>
-  <div id="wrapper" class="grid justify-items-center">
-    <ul>
-      <button
-        class="
-          border-transparent
-          hover:text-black
-          text-gray-500
-          m-6
-          p-2
-          hover:border-gray-500
-          border-b
-          transform
-          transition
-          duration-200
-          ease-in-out
-          w-24
-        "
-        v-for="(item, id) in navigationItems"
-        :key="id"
-      >
-        <router-link :to="item.route">{{ item.text }}</router-link>
-      </button>
+  <div class="inline-block" v-for="(item, id) in navigationItems" :key="id">
+    <ul class="pt-6 pb-6">
+      <router-link :to="item.route">
+        <a
+          class="
+            border-transparent
+            hover:text-black
+            text-gray-500
+            m-6
+            p-2
+            hover:border-gray-500
+            border-b
+            transform
+            transition
+            duration-200
+            ease-in-out
+            w-32
+          "
+        >
+          {{ item.text }}
+        </a>
+      </router-link>
     </ul>
   </div>
 </template>

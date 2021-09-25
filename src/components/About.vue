@@ -1,6 +1,6 @@
 <template>
   <div class="about text-justify max-w-2xl mx-auto">
-    <img class="mb-8 mx-auto" src="@/assets/circle-me.png" alt="profile" />
+    <img class="mt-6 mb-8 mx-auto" src="@/assets/circle-me.png" alt="profile" />
     <div v-for="(item, id) in about" :key="id">
       <p>{{ item.content }}</p>
       <ul v-for="i in item.references.length" :key="i">
