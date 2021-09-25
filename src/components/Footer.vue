@@ -26,6 +26,7 @@
       </a>
     </ul>
   </div>
+  <div class="m-12 sm:hidden"></div>
 </template>
 
 <script>
