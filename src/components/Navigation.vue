@@ -1,10 +1,10 @@
 <template>
   <div
-    class="inline-block w-40"
+    class="inline-block md:w-1/4 w-40"
     v-for="(item, id) in navigationItems"
     :key="id"
   >
-    <ul class="pt-6 pb-6">
+    <ul class="py-6">
       <router-link :to="item.route">
         <a
           class="
@@ -12,7 +12,6 @@
             hover:text-black
             text-gray-500
             m-6
-            p-2
             hover:border-gray-500
             border-b
             transform
@@ -20,6 +19,8 @@
             duration-200
             ease-in-out
             w-32
+            md:text-xl
+            text-base
           "
         >
           {{ item.text }}
@@ -39,8 +40,8 @@ export default {
   },
   mounted() {
     fetch("data.json")
-      .then(res => res.json())
-      .then(data => (this.navigationItems = data.navigation));
+      .then((res) => res.json())
+      .then((data) => (this.navigationItems = data.navigation));
   },
 };
 </script>

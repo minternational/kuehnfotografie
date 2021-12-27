@@ -1,10 +1,10 @@
 <template>
   <div
-    class="sm:inline-block sm:object-center sm:w-40"
+    class="inline-block object-center w-40"
     v-for="(item, id) in footerItems"
     :key="id"
   >
-    <ul class="sm:pt-12 sm:pb-6 pt-6">
+    <ul class="py-6">
       <a
         class="
           border-transparent
@@ -42,8 +42,8 @@ export default {
   },
   mounted() {
     fetch("data.json")
-      .then(res => res.json())
-      .then(data => (this.footerItems = data.footer));
+      .then((res) => res.json())
+      .then((data) => (this.footerItems = data.footer));
   },
 };
 </script>
